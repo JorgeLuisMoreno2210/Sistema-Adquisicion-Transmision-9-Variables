@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Jortan Sports</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css?v=1" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css">
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
+      id="mainNav"
+    >
+      <div class="container px-5">
+        <a class="navbar-brand fw-bold" href="#page-top">Jortan Sports</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="resumen.html">Resumen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="desarrollo.html">Desarrollo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-lg-3" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <a
+            class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0"
+            href="index.html#serverGo"
+          >
+            <span class="d-flex align-items-center">
+              <i class="bi-rocket-takeoff-fill me-2"></i>
+              <span class="small">Resultados</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Quote/testimonial aside-->
+
+    <aside class="text-center bg-gradient-primary-to-secondary">
+      <div class="container px-5 mt-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-xl-8">
+            <div class="h2 fs-1 text-white mb-4">
+              Diseño e implementación de un sistema supervisor de signos vitales
+              y posición para grupos de deportistas, basado en el Internet de
+              las cosas.
+            </div>
+            <img src="assets/img/logoUDI.png" alt="..." style="height: 3rem" />
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- Basic features section-->
+    <section class="bg-light py-4">
+      <div class="container">
+        <div class="row gx-5">
+          <div class="col-12 text-center">
+            <h1 class="display-5 lh-1 mb-0">Lector de Variables</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App features section-->
+    <section id="features">
+      <div class="container px-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 p-3">
+              <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-disp-1-tab" data-bs-toggle="tab" data-bs-target="#nav-disp-1" type="button" role="tab" aria-controls="nav-disp-1" aria-selected="true">Dispositivo #1</button>
+                  <button class="nav-link" id="nav-disp-2-tab" data-bs-toggle="tab" data-bs-target="#nav-disp-2" type="button" role="tab" aria-controls="nav-disp-2" aria-selected="false">Dispositivo #2</button>
+                  <button class="nav-link" id="nav-disp-3-tab" data-bs-toggle="tab" data-bs-target="#nav-disp-3" type="button" role="tab" aria-controls="nav-disp-3" aria-selected="false">Dispositivo #3</button>
+                </div>
+              </nav>
+              <div class="tab-content p-3 border bg-light" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-disp-1" role="tabpanel" aria-labelledby="nav-disp-1-tab">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th style="width:5px;"></th>
+                        <th>Métrica</th>
+                        <th>Valor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><i class="bi-person-bounding-box"></i></td>
+                        <td>id</td>
+                        <td>" + String(boardsStruct[0].id) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-geo-alt"></i></td>
+                        <td>latitud</td>
+                        <td>" + String(boardsStruct[0].lat) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-map"></i></td>
+                        <td>longitud</td>
+                        <td>" + String(boardsStruct[0].lng) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-stopwatch"></i></td>
+                        <td>velocidad</td>
+                        <td>" + String(boardsStruct[0].speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-clock-history"></i></td>
+                        <td>V_max</td>
+                        <td>" + String(boardsStruct[0].max_speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-check2-circle"></i></td>
+                        <td>V_prom</td>
+                        <td>" + String(boardsStruct[0].avg_speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-bookmark-heart-fill"></i></td>
+                        <td>Beat</td>
+                        <td>" + String(boardsStruct[0].bt) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-bookmark-heart"></i></td>
+                        <td>Beat_prom</td>
+                        <td>" + String(boardsStruct[0].bta) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-activity"></i></td>
+                        <td>% ox</td>
+                        <td>" + String(boardsStruct[0].oxg) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-thermometer"></i></td>
+                        <td>temperatura</td>
+                        <td>" + String(boardsStruct[0].temp) + "</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="nav-disp-2" role="tabpanel" aria-labelledby="nav-disp-2-tab">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th style="width:5px;"></th>
+                        <th>Métrica</th>
+                        <th>Valor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><i class="bi-person-bounding-box"></i></td>
+                        <td>id</td>
+                        <td>" + String(boardsStruct[0].id) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-geo-alt"></i></td>
+                        <td>latitud</td>
+                        <td>" + String(boardsStruct[0].lat) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-map"></i></td>
+                        <td>longitud</td>
+                        <td>" + String(boardsStruct[0].lng) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-stopwatch"></i></td>
+                        <td>velocidad</td>
+                        <td>" + String(boardsStruct[0].speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-clock-history"></i></td>
+                        <td>V_max</td>
+                        <td>" + String(boardsStruct[0].max_speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-check2-circle"></i></td>
+                        <td>V_prom</td>
+                        <td>" + String(boardsStruct[0].avg_speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-bookmark-heart-fill"></i></td>
+                        <td>Beat</td>
+                        <td>" + String(boardsStruct[0].bt) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-bookmark-heart"></i></td>
+                        <td>Beat_prom</td>
+                        <td>" + String(boardsStruct[0].bta) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-activity"></i></td>
+                        <td>% ox</td>
+                        <td>" + String(boardsStruct[0].oxg) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-thermometer"></i></td>
+                        <td>temperatura</td>
+                        <td>" + String(boardsStruct[0].temp) + "</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="nav-disp-3" role="tabpanel" aria-labelledby="nav-disp-3-tab">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th style="width:5px;"></th>
+                        <th>Métrica</th>
+                        <th>Valor</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><i class="bi-person-bounding-box"></i></td>
+                        <td>id</td>
+                        <td>" + String(boardsStruct[0].id) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-geo-alt"></i></td>
+                        <td>latitud</td>
+                        <td>" + String(boardsStruct[0].lat) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-map"></i></td>
+                        <td>longitud</td>
+                        <td>" + String(boardsStruct[0].lng) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-stopwatch"></i></td>
+                        <td>velocidad</td>
+                        <td>" + String(boardsStruct[0].speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-clock-history"></i></td>
+                        <td>V_max</td>
+                        <td>" + String(boardsStruct[0].max_speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-check2-circle"></i></td>
+                        <td>V_prom</td>
+                        <td>" + String(boardsStruct[0].avg_speed) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-bookmark-heart-fill"></i></td>
+                        <td>Beat</td>
+                        <td>" + String(boardsStruct[0].bt) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-bookmark-heart"></i></td>
+                        <td>Beat_prom</td>
+                        <td>" + String(boardsStruct[0].bta) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-activity"></i></td>
+                        <td>% ox</td>
+                        <td>" + String(boardsStruct[0].oxg) + "</td>
+                      </tr>
+                      <tr>
+                        <td><i class="bi-thermometer"></i></td>
+                        <td>temperatura</td>
+                        <td>" + String(boardsStruct[0].temp) + "</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-black text-center py-5">
+      <div class="container px-5">
+        <div class="text-white-50 small">
+          <div class="mb-2">
+            Universidad de Investigación y Desarrollo - UDI.
+          </div>
+          <div class="mb-2">
+            &copy; Jortan Sports 2023. All Rights Reserved.
+          </div>
+          <div class="mb-2">
+            <a href="#!">Jorge Moreno</a>
+            <span class="mx-1">&middot;</span>
+            <a href="#!">Jonathan Alvarez</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    
+  </body>
+</html>
